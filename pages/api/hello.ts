@@ -7,6 +7,7 @@ export const config = {
 };
 
 export default function handler(req: NextApiRequest) {
+  console.log("edge runtime");
   return NextResponse.json({
     name: `Hello, from ${req.url}`,
   });
